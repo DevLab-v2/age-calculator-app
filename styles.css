@@ -124,6 +124,7 @@ button {
   .container {
     width: 90%;
     height: 100%;
+    min-height: 520px;
     gap: 45px;
     padding: 20px;
   }

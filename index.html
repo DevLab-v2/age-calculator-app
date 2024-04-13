@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- style -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="heading">Age Calculator</h1>
+    <section class="container">
+      <div style="width: 100%">
+        <div class="date_inputs">
+          <div>
+            <label for="day">Day</label>
+            <input type="number" id="day" min="1" max="31" placeholder="Day" />
+          </div>
+          <div>
+            <label for="month">Month</label>
+            <input
+              type="number"
+              id="month"
+              min="1"
+              max="12"
+              placeholder="Month"
+            />
+          </div>
+          <div>
+            <label for="year">Year</label>
+            <input
+              type="number"
+              id="year"
+              placeholder="Year"
+              max="{new"
+              Date().getFullYear()}
+            />
+          </div>
+        </div>
+        <button onclick="ageCalculate()">Calculate</button>
+      </div>
+
+      <div id="age_result">
+        <!-- <h2><span id="year_diff">00</span> Years</h2>
+        <h2><span id="month_diff">00</span> Months</h2>
+        <h2><span id="day_diff">00</span> Days</h2> -->
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>

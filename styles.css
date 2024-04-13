@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f0f0f0;
+  max-width: 1350px;
+  border: 1px solid #000;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 5px;
+  background-color: #ffffff;
+  padding: 10px;
+  width: 50%;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.container {
+  width: 50%;
+  height: 100%;
+  /* height: 500px; */
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  border-bottom-right-radius: 150px;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 45px;
+}
+
+.date_inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  width: 100%;
+}
+
+.date_inputs > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.date_inputs > div > label {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.date_inputs > div > input {
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 100%;
+}
+
+::placeholder {
+  color: gray;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.date_inputs > div > input:focus {
+  outline: 0.5px solid #000;
+}
+
+button {
+  padding: 14px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #854efc;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#age_result {
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-transform: lowercase;
+  font-style: italic;
+  transition: all 0.3s ease-in-out;
+}
+
+#age_result > h2 > span {
+  color: #854efc;
+  font-style: normal;
+}
+
+@media screen and (max-width: 450px) {
+  .heading {
+    font-size: 1.5rem;
+    width: 90%;
+  }
+
+  .container {
+    width: 90%;
+    height: 100%;
+    gap: 45px;
+    padding: 20px;
+  }
+
+  .date_inputs {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .date_inputs > div {
+    width: 100%;
+  }
+
+  .date_inputs > div > input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  #age_result {
+    font-size: 1.5rem;
+  }
+}
